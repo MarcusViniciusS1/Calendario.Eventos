@@ -48,7 +48,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onNavigateToCalendar }) 
   };
 
   const handleViewMore = (eventId: string) => {
-    // Implementar visualização detalhada do evento
+    
     console.log('Ver mais detalhes do evento:', eventId);
   };
 
