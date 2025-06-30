@@ -22,7 +22,7 @@ export const PublicCalendar: React.FC<PublicCalendarProps> = ({ onNavigateToLogi
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Calendar className="w-8 h-8 text-orange-500" />
-            <h1 className="text-2xl font-bold text-white">Calendário de Eventos</h1>
+            <h1 className="text-2xl font-bold text-white"> Calendário de Eventos </h1>
           </div>
           <button
             onClick={onNavigateToLogin}
@@ -50,10 +50,10 @@ export const PublicCalendar: React.FC<PublicCalendarProps> = ({ onNavigateToLogi
           <div className="text-center py-12">
             <Calendar className="w-16 h-16 text-gray-500 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-400 mb-2">
-              Nenhum evento encontrado
+              Nenhum evento encontrado 
             </h3>
             <p className="text-gray-500">
-              Não há eventos cadastrados no momento.
+              Não há eventos cadastrados até o momento.
             </p>
           </div>
         )}
