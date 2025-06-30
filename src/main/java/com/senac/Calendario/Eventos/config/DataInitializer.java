@@ -23,7 +23,7 @@ public class DataInitializer implements CommandLineRunner {
     
     @Override
     public void run(String... args) throws Exception {
-        // Criar usuário admin padrão se não existir
+
         if (!usuarioRepository.existsByUsername("ADM")) {
             Usuario admin = new Usuario();
             admin.setUsername("ADM");
@@ -33,7 +33,7 @@ public class DataInitializer implements CommandLineRunner {
             System.out.println("Usuário admin criado: ADM/ADM123");
         }
         
-        // Criar eventos de exemplo se não existirem
+
         if (eventoRepository.count() == 0) {
             Evento evento1 = new Evento();
             evento1.setTitulo("Workshop de Tecnologia");

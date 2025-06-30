@@ -29,13 +29,13 @@ public class UsuarioService implements UserDetailsService {
         return new User(usuario.getUsername(), usuario.getPassword(), new ArrayList<>());
     }
     
-    // Método para encontrar um usuário pelo nome de usuário
+
     public Usuario findByUsername(String username) {
         return usuarioRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado: " + username));
     }
     
-    // Método para criar um novo usuário
+
     public Usuario createUser(String username, String password) {
         if (usuarioRepository.existsByUsername(username)) {
             throw new RuntimeException("Usuário já existe!");
@@ -49,7 +49,6 @@ public class UsuarioService implements UserDetailsService {
         return usuarioRepository.save(usuario);
     }
     
-    // Verifica se o usuário existe no banco
     public boolean existsByUsername(String username) {
         return usuarioRepository.existsByUsername(username);
     }

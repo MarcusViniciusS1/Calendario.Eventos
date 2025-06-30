@@ -16,7 +16,7 @@ const AppContent: React.FC = () => {
   const navigateToLogin = () => setCurrentPage('login');
   const navigateToAdmin = () => setCurrentPage('admin');
 
-  // Redirect to calendar if not authenticated and trying to access admin
+ 
   React.useEffect(() => {
     if (currentPage === 'admin' && !isAuthenticated) {
       setCurrentPage('calendar');

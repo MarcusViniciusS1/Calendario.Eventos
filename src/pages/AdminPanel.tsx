@@ -54,7 +54,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onNavigateToCalendar }) 
 
   return (
     <div className="min-h-screen bg-slate-900">
-      {/* Header */}
+ 
       <header className="bg-slate-800 border-b border-slate-700 px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onNavigateToCalendar }) 
         </div>
       </header>
 
-      {/* Main Content */}
+
       <main className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-white">Painel Administrativo</h2>
@@ -117,7 +117,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onNavigateToCalendar }) 
         )}
       </main>
 
-      {/* Event Modal */}
+
       <EventModal
         isOpen={isModalOpen}
         onClose={() => {

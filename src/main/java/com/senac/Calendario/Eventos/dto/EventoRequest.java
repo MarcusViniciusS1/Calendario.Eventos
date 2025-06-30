@@ -27,7 +27,7 @@ public class EventoRequest {
     @Size(min = 3, max = 100)
     private String organizador;
     
-    // Constructors
+
     public EventoRequest() {}
     
     public EventoRequest(String titulo, String descricao, String data, String hora, String local, String organizador) {
@@ -39,7 +39,7 @@ public class EventoRequest {
         this.organizador = organizador;
     }
     
-    // Getters and Setters
+  
     public String getTitulo() {
         return titulo;
     }

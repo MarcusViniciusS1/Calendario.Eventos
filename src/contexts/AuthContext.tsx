@@ -24,7 +24,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const login = (usuario: string, senha: string): boolean => {
-    // Credenciais de teste baseadas na imagem
     if (usuario === 'ADM' && senha === 'ADM123') {
       setIsAuthenticated(true);
       return true;

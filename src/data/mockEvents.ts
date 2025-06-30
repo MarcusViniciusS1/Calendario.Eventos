@@ -36,5 +36,7 @@ export const mockEvents: Event[] = [
     hora: '23:03',
     local: '123',
     organizador: 'Admin'
+
+    
   }
 ];

@@ -41,7 +41,7 @@ public class Evento {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
     
-    // Constructors
+
     public Evento() {}
     
     public Evento(String titulo, String descricao, String data, String hora, String local, String organizador) {
@@ -64,7 +64,7 @@ public class Evento {
         updatedAt = LocalDateTime.now();
     }
     
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }
