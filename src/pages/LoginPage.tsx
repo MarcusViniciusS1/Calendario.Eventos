@@ -22,7 +22,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
     if (login(credentials.usuario, credentials.senha)) {
       onNavigateToAdmin();
     } else {
-      setError('Credenciais inválidas. Tente novamente.');
+      setError('Credenciais inválidas. Tente novamente,por gentileza');
     }
   };
 
