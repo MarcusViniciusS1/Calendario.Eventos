@@ -1,4 +1,4 @@
-package com.senac.Calendario.Eventos.model;
+package com.senac.Calendario.Eventos.entitys;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

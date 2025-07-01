@@ -1,7 +1,7 @@
 package com.senac.Calendario.Eventos.config;
 
-import com.senac.Calendario.Eventos.model.Usuario;
-import com.senac.Calendario.Eventos.model.Evento;
+import com.senac.Calendario.Eventos.entitys.Usuario;
+import com.senac.Calendario.Eventos.entitys.Evento;
 import com.senac.Calendario.Eventos.repository.UsuarioRepository;
 import com.senac.Calendario.Eventos.repository.EventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

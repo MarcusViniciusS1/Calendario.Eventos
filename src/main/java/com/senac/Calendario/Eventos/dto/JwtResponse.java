@@ -7,7 +7,7 @@ public class JwtResponse {
     private String username;
     private String role;
     
-    // Constructors
+
     public JwtResponse() {}
     
     public JwtResponse(String token, String username, String role) {
@@ -16,7 +16,7 @@ public class JwtResponse {
         this.role = role;
     }
     
-    // Getters and Setters
+   
     public String getToken() {
         return token;
     }

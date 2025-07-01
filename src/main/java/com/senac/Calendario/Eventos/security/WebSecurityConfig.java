@@ -27,7 +27,6 @@ import java.util.Arrays;
 public class WebSecurityConfig {
     
     @Autowired
-    @Lazy  // Adicionando a anotação @Lazy para evitar a dependência circular
     private UsuarioService usuarioService;
     
     @Autowired
@@ -41,8 +40,8 @@ public class WebSecurityConfig {
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-        authProvider.setUserDetailsService(usuarioService);  // Usa o UsuarioService aqui
-        authProvider.setPasswordEncoder(passwordEncoder());  // Usa o PasswordEncoder configurado
+        authProvider.setUserDetailsService(usuarioService); 
+        authProvider.setPasswordEncoder(passwordEncoder());  
         return authProvider;
     }
     
@@ -53,7 +52,7 @@ public class WebSecurityConfig {
     
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();  // PasswordEncoder já configurado aqui
+        return new BCryptPasswordEncoder();  
     }
     
     @Bean

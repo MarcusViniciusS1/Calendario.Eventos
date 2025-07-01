@@ -1,4 +1,4 @@
-package com.senac.Calendario.Eventos.model;
+package com.senac.Calendario.Eventos.entitys;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -28,7 +28,7 @@ public class Usuario {
         ADMIN
     }
     
-    // Constructors
+    
     public Usuario() {}
     
     public Usuario(String username, String password) {
@@ -37,7 +37,7 @@ public class Usuario {
         this.role = Role.ADMIN;
     }
     
-    // Getters and Setters
+    
     public Long getId() {
         return id;
     }

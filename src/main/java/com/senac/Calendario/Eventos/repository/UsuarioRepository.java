@@ -1,6 +1,6 @@
 package com.senac.Calendario.Eventos.repository;
 
-import com.senac.Calendario.Eventos.model.Usuario;
+import com.senac.Calendario.Eventos.entitys.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.Optional;

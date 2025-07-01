@@ -1,7 +1,7 @@
 package com.senac.Calendario.Eventos.controller;
 
 import com.senac.Calendario.Eventos.dto.EventoRequest;
-import com.senac.Calendario.Eventos.model.Evento;
+import com.senac.Calendario.Eventos.entitys.Evento;
 import com.senac.Calendario.Eventos.service.EventoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +21,12 @@ public class EventoController {
     @Autowired
     private EventoService eventoService;
     
-    // Endpoint público para listar todos os eventos
     @GetMapping("/public")
     public ResponseEntity<List<Evento>> getAllEventosPublic() {
         List<Evento> eventos = eventoService.findAll();
         return ResponseEntity.ok(eventos);
     }
     
-    // Endpoints protegidos (requerem autenticação)
     @GetMapping
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<Evento>> getAllEventos() {

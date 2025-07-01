@@ -2,7 +2,7 @@ package com.senac.Calendario.Eventos.controller;
 
 import com.senac.Calendario.Eventos.dto.JwtResponse;
 import com.senac.Calendario.Eventos.dto.LoginRequest;
-import com.senac.Calendario.Eventos.model.Usuario;
+import com.senac.Calendario.Eventos.entitys.Usuario;
 import com.senac.Calendario.Eventos.security.JwtUtils;
 import com.senac.Calendario.Eventos.service.UsuarioService;
 import jakarta.validation.Valid;
