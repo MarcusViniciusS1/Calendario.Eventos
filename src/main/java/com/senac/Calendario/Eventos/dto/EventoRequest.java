@@ -1,16 +1,14 @@
 package com.senac.Calendario.Eventos.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+
 
 public class EventoRequest {
     
     @NotBlank
-    @Size(min = 3, max = 100)
     private String titulo;
     
     @NotBlank
-    @Size(min = 10, max = 500)
     private String descricao;
     
     @NotBlank
@@ -20,11 +18,9 @@ public class EventoRequest {
     private String hora;
     
     @NotBlank
-    @Size(min = 3, max = 100)
     private String local;
     
     @NotBlank
-    @Size(min = 3, max = 100)
     private String organizador;
     
 
